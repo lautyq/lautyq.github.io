@@ -1,0 +1,420 @@
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lautyy_ | Founder of SkyNet-Solutions Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Montserrat:wght@300;400;500;600;700;800&amp;family=Fira+Code:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --obsidian: #0D0D0D;
+            --electric-purple: #A855F7;
+            --cyber-lime: #BEF264;
+            --card-noise: url("https://www.transparenttextures.com/patterns/carbon-fibre.png");
+        }
+        .glow-text-purple {
+            text-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
+        }
+        .glow-text-lime {
+            text-shadow: 0 0 15px rgba(190, 242, 100, 0.4);
+        }
+        .noise-bg {
+            background-image: var(--card-noise);
+            background-repeat: repeat;
+        }
+        .ticker-animation {
+            animation: ticker 40s linear infinite;
+        }
+        @keyframes ticker {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .ghost-gradient-btn {
+            position: relative;
+            background: rgba(13, 13, 13, 0.6);
+            backdrop-filter: blur(8px);
+            z-index: 1;
+        }
+        .ghost-gradient-btn::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            padding: 1px;
+            background: linear-gradient(to right, var(--electric-purple), var(--cyber-lime));
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+        }
+        .tech-icon {
+            filter: grayscale(100%);
+            opacity: 0.6;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .tech-icon-container:hover .tech-icon {
+            filter: grayscale(0%);
+            opacity: 1;
+            transform: scale(1.1);
+        }
+        .tech-icon-container:hover {
+            box-shadow: 0 0 20px rgba(168, 85, 247, 0.2);
+            border-color: rgba(168, 85, 247, 0.3);
+        }
+        .neo-brutal-btn {
+            border-radius: 0.5rem;
+            border-top-left-radius: 0px;
+        }
+        .syntax-keyword { color: #C678DD; }
+        .syntax-func { color: #61AFEF; }
+        .syntax-str { color: #98C379; }
+        .syntax-var { color: #E06C75; }
+        .syntax-const { color: #D19A66; }
+        .syntax-comment { color: #5C6370; font-style: italic; }
+    </style>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: "#0D0D0D",
+                        purple: {
+                            DEFAULT: "#A855F7",
+                            light: "#C084FC",
+                        },
+                        lime: {
+                            DEFAULT: "#BEF264",
+                        }
+                    },
+                    fontFamily: {
+                        display: ["Montserrat", "sans-serif"],
+                        sans: ["Inter", "sans-serif"],
+                        mono: ["Fira Code", "monospace"],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+<body class="bg-obsidian text-white font-sans antialiased selection:bg-purple/30 selection:text-lime">
+<header class="fixed top-0 w-full z-50 px-8 py-5 flex justify-between items-center backdrop-blur-xl bg-obsidian/80 border-b border-white/5">
+<div class="flex items-center gap-1">
+<span class="text-2xl font-black font-display tracking-tighter text-white">Lautyy<span class="text-purple">_</span></span>
+</div>
+<nav class="hidden md:flex items-center gap-10 text-[10px] font-extrabold uppercase tracking-[0.25em] text-slate-400">
+<a class="hover:text-purple transition-colors" href="#services">Services</a>
+<a class="hover:text-purple transition-colors" href="#projects">Projects</a>
+<a class="hover:text-purple transition-colors" href="#about">About</a>
+<a class="hover:text-purple transition-colors" href="#contact">Contact</a>
+</nav>
+<div class="hidden md:block">
+<a class="text-[10px] font-bold uppercase tracking-widest bg-white/5 border border-white/10 px-6 py-2.5 rounded-md hover:bg-purple hover:text-white transition-all duration-300" href="#contact">Consult Now</a>
+</div>
+</header>
+<section class="relative min-h-screen flex items-stretch overflow-hidden">
+<div class="w-full lg:w-3/5 relative z-10 flex flex-col justify-center px-8 md:px-20 pt-24">
+<div class="max-w-2xl">
+<div class="flex items-center gap-3 mb-6 bg-white/[0.03] w-fit px-4 py-1.5 rounded-full border border-white/10 backdrop-blur-md">
+<span class="material-symbols-outlined text-lime text-base">verified_user</span>
+<span class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-300">Founder of <span class="text-lime glow-text-lime">SkyNet-Solutions</span></span>
+</div>
+<h1 class="text-6xl md:text-8xl font-display font-black tracking-tighter mb-8 leading-[0.9]">
+                HELLO,<br/><span class="text-white glow-text-purple">I'M LAUTYY<span class="text-lime">_</span></span>
+</h1>
+<div class="bg-[#1E1E1E] rounded-lg shadow-2xl border border-white/10 overflow-hidden mb-12 font-mono text-sm">
+<div class="bg-[#2D2D2D] px-4 py-2 flex justify-between items-center">
+<div class="flex gap-2">
+<div class="w-3 h-3 rounded-full bg-[#FF5F56]"></div>
+<div class="w-3 h-3 rounded-full bg-[#FFBD2E]"></div>
+<div class="w-3 h-3 rounded-full bg-[#27C93F]"></div>
+</div>
+<div class="text-slate-400 text-[10px] uppercase tracking-widest">profile.ts — Visual Studio Code</div>
+</div>
+<div class="p-6">
+<div class="flex gap-4">
+<span class="text-slate-600 select-none">1</span>
+<div><span class="syntax-keyword">const</span> <span class="syntax-var">developer</span> = <span class="syntax-keyword">new</span> <span class="syntax-func">FullStack</span>({</div>
+</div>
+<div class="flex gap-4">
+<span class="text-slate-600 select-none">2</span>
+<div class="pl-4"><span class="syntax-const">role</span>: <span class="syntax-str">'Discord Systems Architect'</span>,</div>
+</div>
+<div class="flex gap-4">
+<span class="text-slate-600 select-none">3</span>
+<div class="pl-4"><span class="syntax-const">company</span>: <span class="text-lime">'SkyNet-Solutions'</span>,</div>
+</div>
+<div class="flex gap-4">
+<span class="text-slate-600 select-none">4</span>
+<div class="pl-4"><span class="syntax-const">experience</span>: <span class="syntax-str">'5+ Years'</span>,</div>
+</div>
+<div class="flex gap-4">
+<span class="text-slate-600 select-none">5</span>
+<div class="pl-4"><span class="syntax-const">specialty</span>: <span class="syntax-str">'Custom Bots &amp; Web Systems'</span></div>
+</div>
+<div class="flex gap-4">
+<span class="text-slate-600 select-none">6</span>
+<div>});</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-8 mb-12 border-t border-white/5 pt-8">
+<div>
+<div class="text-4xl font-display font-black text-white mb-1">50+</div>
+<div class="text-[10px] uppercase tracking-[0.2em] text-lime font-bold">Bots Built</div>
+</div>
+<div>
+<div class="text-4xl font-display font-black text-white mb-1">5+</div>
+<div class="text-[10px] uppercase tracking-[0.2em] text-purple font-bold">Years Prof</div>
+</div>
+<div>
+<div class="text-4xl font-display font-black text-white mb-1">30+</div>
+<div class="text-[10px] uppercase tracking-[0.2em] text-slate-500 font-bold">Systems</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-6">
+<a class="ghost-gradient-btn px-10 py-4 rounded-xl font-black uppercase text-xs tracking-widest transition-all hover:scale-[1.02] flex items-center justify-center" href="#projects">
+                    View My Work
+                </a>
+<a class="neo-brutal-btn bg-purple hover:bg-purple-light text-obsidian px-10 py-4 font-black uppercase text-xs tracking-widest transition-all flex items-center justify-center gap-3" href="#contact">
+                    Start a Project <span class="material-symbols-outlined text-lg">arrow_outward</span>
+</a>
+</div>
+</div>
+</div>
+<div class="hidden lg:block w-2/5 relative overflow-hidden bg-obsidian border-l border-white/5">
+<div class="absolute inset-0 bg-gradient-to-tr from-purple/20 via-transparent to-lime/10"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="relative w-full h-full">
+<div class="absolute inset-0 bg-gradient-to-l from-transparent via-obsidian/40 to-obsidian z-20"></div>
+<div class="w-full h-full relative overflow-hidden">
+<img alt="Lautyy_ Professional" class="w-full h-full object-cover grayscale brightness-75 contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6JetJb_jX7KP_SOtmfwtqacOKno2Rmuwd347_z5keMUulaWW-r9uIDdSiC_Juh8GKtZk1r_lL7_oAC_-y9lCF_-kQFJX-zHVWXpB_GO8yrpAcynCvs8wtukifEfMiRjT7zWV_872Z3Qp0RbtnWz7mf1GhQxFMJmKZm1yjt1gDygKaw-ka_ade0W-ZCWc9abB_EOE3SByet_XXD1Y8aApx4rtzJee_KogQ4tjtLcKJuJOaDjWrBgaWAxcVgvfI4r7JkYuw76y1YQwS"/>
+<div class="absolute inset-0 bg-purple/5 mix-blend-overlay"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-12 border-y border-white/5 bg-obsidian relative z-20">
+<div class="flex overflow-hidden whitespace-nowrap">
+<div class="ticker-animation flex items-center gap-12 pr-12">
+<div class="tech-icon-container flex items-center gap-4 text-slate-400 font-bold text-xs uppercase tracking-[0.25em] bg-white/[0.02] border border-white/5 px-8 py-4 rounded-xl transition-all">
+<img alt="Node.js" class="tech-icon w-8 h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCBeP1HNbXGnzNC6vXzwOO9j4zt6I5eYHu2iU16J1uYYRmfO1quEqDqQO7NjoG9elsThZ-5x85bY_uE-XI6eLHMT2Z0Z_gtzLmsHGnp1kwG3nziVv9jc4iffqcydJPuCVFdf3a7Avw1qiHQytP97ICQtPiZma90h96XAudXDbVeR7-s9k-jZQJqLi1BZ-9qBwQkmKkzTuudgBMcXzT50pezdigic7QLH2CryvYr3xG3liPG_nJPpR9T4GeCxLzX-vSBQ4yFg7p2qak"/> Node.js
+            </div>
+<div class="tech-icon-container flex items-center gap-4 text-slate-400 font-bold text-xs uppercase tracking-[0.25em] bg-white/[0.02] border border-white/5 px-8 py-4 rounded-xl transition-all">
+<img alt="React" class="tech-icon w-8 h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrbYaRADqkzA0vBeTWgHdskRyeNY_5kDxNlMbm6cMhSseoQMObReQgTPyKy1_MyvAvaDXH_4bcZAY2Ay31FgWxJCZYT0rXeKFNlEf85L5fug0eSLuGj8USvoDrHia3Z8O8JSMD4e5CRdGdDaQ1qyTTWszAj86_2aOJ-v8jPfywdgZagA2HZLIeJks3swGXhWS7yOJ7D_za28JxOCHsh0UZQbzYAKDhYxQHQr7p524_KF-eaw9nJH2Xci1bBwU8vRE36ZcSeCcxNeej"/> React
+            </div>
+<div class="tech-icon-container flex items-center gap-4 text-slate-400 font-bold text-xs uppercase tracking-[0.25em] bg-white/[0.02] border border-white/5 px-8 py-4 rounded-xl transition-all">
+<img alt="HTML5" class="tech-icon w-8 h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXwHmVW0FIuQgkNJkRkoVX8m1t9Vl8IxwpOdYtR1HdhhC8f50AjdFXwjWZqXmgWR6njhKPZshVgo8sETaByKarppnLVaRhcn3EltueN10TC9MJ4qyPHvUvO45UJ2-iszK_uvaUeV8OJjh16KAVDCxLH8Vbg9Aaa9iDCKD65YSsavQBdBEGaDXJt85U-lbLWskC-eWQbN4DpWa_lqsbiG3UEJD9gknn_H4jWAfY1FZ3f7-1_cE0_VVMTZMUkNbUBZqA1ET32A-6CYEx"/> HTML5
+            </div>
+<div class="tech-icon-container flex items-center gap-4 text-slate-400 font-bold text-xs uppercase tracking-[0.25em] bg-white/[0.02] border border-white/5 px-8 py-4 rounded-xl transition-all">
+<img alt="CSS3" class="tech-icon w-8 h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwYlpJaagPSZdmtnD8VmCVxWz1GRCpi0fO4A4d6T37YQS_4h5Re50E0be-7GOBOfhR-1T9oytZ3iqWCsx731I_s9FFE9f6GnTZgKjWnOmZQIVWq0oIdxuN2GQnsAYORBG6je4pMv7Ki68eMyX7cKu6aIy70jCBJ93PFXQPn8AgnGZP-0LZHW5UDqUY5WjZs09Wwz6DdIxTpsK2wWnY7KIvSWvRAhamgYIe14CDZZBtPLk66CFXNPQdOyr87UClQHay5hv1MH8V1S-i"/> CSS3
+            </div>
+<div class="tech-icon-container flex items-center gap-4 text-slate-400 font-bold text-xs uppercase tracking-[0.25em] bg-white/[0.02] border border-white/5 px-8 py-4 rounded-xl transition-all">
+<img alt="JS" class="tech-icon w-8 h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTU5eRcZnEhQ0gyxdSynUfHwxmNUNDlI7u6qdsQ-MzmpwJEs_rR6BRD5TWmEz4MUQe0XkzXFCDZ6uB2qFhMEeT6ZDuJBpPml7fjbp-QRsr6gWLWnBLhXw71GsWMUntQTwkEvO027DR_rO37cXQE9hY3sgYZkLZT6uhThOxTMXFCLctzhOZzmyZ34pcLRNi4XCD8cIyd0n6bcUSkihDxt70nPaWSKVGPQ_IYrN_c2nyI-fubofz_ZxX5tGZpN-3-p0DOS0A605UdqtZ"/> JS
+            </div>
+<div class="tech-icon-container flex items-center gap-4 text-slate-400 font-bold text-xs uppercase tracking-[0.25em] bg-white/[0.02] border border-white/5 px-8 py-4 rounded-xl transition-all">
+<img alt="MySQL" class="tech-icon w-8 h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDltufTSzUuVeFTTkFkVuhERKU3yTTCrgOEZb19QzeZ6McRanDbYi3ibtjTHV33vPAiUrzobeWNIcmUgUaq72zPIwYxpSkDBpJYJI7vacXz-H5L4jRaC1KpZb8L_lGjaHsmD51IyRWj2Ag-eDYKJIaRG25XqhUa1yvnArxJt55TGcdQld50TkiQIlYJv2bh1OghP11UN9vWHdI4EEV1ZRNrWc52amibEirhGxrkJQscnaP3FauQSj5grOsolBFVExaG3b4WVgNmfmTK"/> MySQL
+            </div>
+<div class="tech-icon-container flex items-center gap-4 text-slate-400 font-bold text-xs uppercase tracking-[0.25em] bg-white/[0.02] border border-white/5 px-8 py-4 rounded-xl transition-all">
+<img alt="Discord" class="tech-icon w-8 h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_0D_cQ3m6Dfv953yy61iSf8tzCslwpf8kVkuN2Z03g21gBKvv8D7DspsRwZFbAECdQ-DWIqTuHcdSvs11skH2fzmipWsBZAh4jKvATZuBGCSmlIcRCC_AmKZYq2wCtU8TLAKSfLf7DB0aYSndRaquCoqgEPvsKPyvMFZvep6t8Ba5KMJzmkbzPAZYakNv-fOL2JWMWo6yVEu6000dDKbDgSVq-gYRlZh8IqVSHDezt930zfU_9F5C3kMC6Wo5SwAcqNkDqJaL3MBJ"/> Discord
+            </div>
+<div class="tech-icon-container flex items-center gap-4 text-slate-400 font-bold text-xs uppercase tracking-[0.25em] bg-white/[0.02] border border-white/5 px-8 py-4 rounded-xl transition-all">
+<img alt="Node.js" class="tech-icon w-8 h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCBeP1HNbXGnzNC6vXzwOO9j4zt6I5eYHu2iU16J1uYYRmfO1quEqDqQO7NjoG9elsThZ-5x85bY_uE-XI6eLHMT2Z0Z_gtzLmsHGnp1kwG3nziVv9jc4iffqcydJPuCVFdf3a7Avw1qiHQytP97ICQtPiZma90h96XAudXDbVeR7-s9k-jZQJqLi1BZ-9qBwQkmKkzTuudgBMcXzT50pezdigic7QLH2CryvYr3xG3liPG_nJPpR9T4GeCxLzX-vSBQ4yFg7p2qak"/> Node.js
+            </div>
+<div class="tech-icon-container flex items-center gap-4 text-slate-400 font-bold text-xs uppercase tracking-[0.25em] bg-white/[0.02] border border-white/5 px-8 py-4 rounded-xl transition-all">
+<img alt="React" class="tech-icon w-8 h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrbYaRADqkzA0vBeTWgHdskRyeNY_5kDxNlMbm6cMhSseoQMObReQgTPyKy1_MyvAvaDXH_4bcZAY2Ay31FgWxJCZYT0rXeKFNlEf85L5fug0eSLuGj8USvoDrHia3Z8O8JSMD4e5CRdGdDaQ1qyTTWszAj86_2aOJ-v8jPfywdgZagA2HZLIeJks3swGXhWS7yOJ7D_za28JxOCHsh0UZQbzYAKDhYxQHQr7p524_KF-eaw9nJH2Xci1bBwU8vRE36ZcSeCcxNeej"/> React
+            </div>
+</div>
+</div>
+</section>
+<section class="py-32 px-6 relative" id="services">
+<div class="container mx-auto">
+<div class="max-w-3xl mb-24">
+<h2 class="text-5xl md:text-7xl font-display font-black mb-8 leading-tight">PREMIUM<br/><span class="text-lime">SERVICES</span></h2>
+<p class="text-slate-400 text-lg leading-relaxed font-medium">Engineered for performance, designed for impact. Specialized solutions for the digital frontier.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="noise-bg bg-obsidian p-10 group hover:border-purple/30 transition-all duration-500 rounded-2xl border border-white/5 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-purple/5 rounded-full -mr-16 -mt-16 group-hover:bg-purple/10 transition-colors"></div>
+<div class="w-14 h-14 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:border-purple/30 transition-all">
+<span class="material-symbols-outlined text-purple text-3xl">database</span>
+</div>
+<h3 class="text-xl font-black uppercase tracking-tight mb-4 group-hover:text-purple transition-colors">Web Systems</h3>
+<p class="text-slate-500 text-sm leading-relaxed mb-6">Robust architecture utilizing MySQL and Discord OAuth2 for ultra-secure custom dashboards and user management.</p>
+</div>
+<div class="noise-bg bg-obsidian p-10 group hover:border-lime/30 transition-all duration-500 rounded-2xl border border-white/5 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-lime/5 rounded-full -mr-16 -mt-16 group-hover:bg-lime/10 transition-colors"></div>
+<div class="w-14 h-14 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:border-lime/30 transition-all">
+<span class="material-symbols-outlined text-lime text-3xl">smart_toy</span>
+</div>
+<h3 class="text-xl font-black uppercase tracking-tight mb-4 group-hover:text-lime transition-colors">Discord Bots</h3>
+<p class="text-slate-500 text-sm leading-relaxed mb-6">Advanced automation: Enterprise-grade ticket systems, automated moderation engines, and proprietary API wrappers.</p>
+</div>
+<div class="noise-bg bg-obsidian p-10 group hover:border-purple/30 transition-all duration-500 rounded-2xl border border-white/5 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-purple/5 rounded-full -mr-16 -mt-16 group-hover:bg-purple/10 transition-colors"></div>
+<div class="w-14 h-14 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:border-purple/30 transition-all">
+<span class="material-symbols-outlined text-purple text-3xl">rocket_launch</span>
+</div>
+<h3 class="text-xl font-black uppercase tracking-tight mb-4 group-hover:text-purple transition-colors">SEO Landing Pages</h3>
+<p class="text-slate-500 text-sm leading-relaxed mb-6">Performance-first React applications optimized for maximum search visibility and aggressive conversion rates.</p>
+</div>
+<div class="noise-bg bg-obsidian p-10 group hover:border-lime/30 transition-all duration-500 rounded-2xl border border-white/5 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-lime/5 rounded-full -mr-16 -mt-16 group-hover:bg-lime/10 transition-colors"></div>
+<div class="w-14 h-14 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:border-lime/30 transition-all">
+<span class="material-symbols-outlined text-lime text-3xl">apartment</span>
+</div>
+<h3 class="text-xl font-black uppercase tracking-tight mb-4 group-hover:text-lime transition-colors">Institutional Sites</h3>
+<p class="text-slate-500 text-sm leading-relaxed mb-6">High-authority corporate presences built to establish dominance and professional brand identity in any niche.</p>
+</div>
+<div class="noise-bg bg-obsidian p-10 group hover:border-purple/30 transition-all duration-500 rounded-2xl border border-white/5 lg:col-span-2 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-48 h-48 bg-purple/5 rounded-full -mr-24 -mt-24 group-hover:bg-purple/10 transition-colors"></div>
+<div class="flex flex-col md:flex-row md:items-center gap-10">
+<div class="w-16 h-16 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center group-hover:scale-110 group-hover:border-purple/30 transition-all shrink-0">
+<span class="material-symbols-outlined text-purple text-4xl">terminal</span>
+</div>
+<div>
+<h3 class="text-2xl font-black uppercase tracking-tight mb-4 group-hover:text-purple transition-colors">Custom Systems (GTA Launchers)</h3>
+<p class="text-slate-500 text-sm max-w-xl leading-relaxed">Deep-level desktop engineering for high-traffic environments, including custom C# launchers with integrated anti-cheat and delta updates.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 px-6 border-y border-white/5" id="projects">
+<div class="container mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+<div>
+<h2 class="text-5xl md:text-6xl font-display font-black mb-4">LATEST <span class="text-purple">WORK</span></h2>
+<p class="text-slate-500 font-medium">Selected technical implementations across major platforms.</p>
+</div>
+<a class="text-lime hover:text-white font-bold uppercase tracking-widest text-[10px] flex items-center gap-3 group" href="#">
+                VIEW REPOS <span class="material-symbols-outlined text-lg group-hover:rotate-45 transition-transform">north_east</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+<div class="group relative overflow-hidden rounded-3xl aspect-[4/5] bg-obsidian border border-white/5">
+<img alt="Project 1" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-30 group-hover:opacity-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6JetJb_jX7KP_SOtmfwtqacOKno2Rmuwd347_z5keMUulaWW-r9uIDdSiC_Juh8GKtZk1r_lL7_oAC_-y9lCF_-kQFJX-zHVWXpB_GO8yrpAcynCvs8wtukifEfMiRjT7zWV_872Z3Qp0RbtnWz7mf1GhQxFMJmKZm1yjt1gDygKaw-ka_ade0W-ZCWc9abB_EOE3SByet_XXD1Y8aApx4rtzJee_KogQ4tjtLcKJuJOaDjWrBgaWAxcVgvfI4r7JkYuw76y1YQwS"/>
+<div class="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/40 to-transparent"></div>
+<div class="absolute inset-0 p-10 flex flex-col justify-end">
+<span class="text-purple text-[10px] font-black uppercase tracking-[0.4em] mb-4 block">Desktop Engineering</span>
+<h4 class="text-3xl font-black mb-4 tracking-tighter">GTA Launcher V3</h4>
+<div class="h-[1px] w-12 bg-lime group-hover:w-full transition-all duration-700 mb-6"></div>
+<p class="text-slate-400 text-sm opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0 leading-relaxed">Encrypted C# desktop client with hardware-id licensing and auto-sync.</p>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-3xl aspect-[4/5] bg-obsidian border border-white/5">
+<img alt="Project 2" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-30 group-hover:opacity-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARoYrOZ1x22H_3T7C4lKT8XudbSdgKLLWcJd45V5tEkRu5ncnjsJY-IfV140N8y5VSQCfQp6MyHSu9dTyqhkO33yNOOgivw82KASeWnsijceSG2RiGJbmNpaT40DFaalHxeAzq6SqtZqFOH9PgJyAfFN9X0mO0Gs-OcCeYaPAnka718aEbeFwRG-34M7hGWlvSPvRLXeXdvreaI72dU1l9UrB0nZuD0aupg0glaTeeXWI4mIE5W-WWUk96agmx3s_dfyLMEImHjebF"/>
+<div class="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/40 to-transparent"></div>
+<div class="absolute inset-0 p-10 flex flex-col justify-end">
+<span class="text-lime text-[10px] font-black uppercase tracking-[0.4em] mb-4 block">Discord API V10</span>
+<h4 class="text-3xl font-black mb-4 tracking-tighter">Sentinel Mod</h4>
+<div class="h-[1px] w-12 bg-purple group-hover:w-full transition-all duration-700 mb-6"></div>
+<p class="text-slate-400 text-sm opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0 leading-relaxed">Real-time moderation architecture powering global gaming communities.</p>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-3xl aspect-[4/5] bg-obsidian border border-white/5">
+<img alt="Project 3" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-30 group-hover:opacity-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwYlpJaagPSZdmtnD8VmCVxWz1GRCpi0fO4A4d6T37YQS_4h5Re50E0be-7GOBOfhR-1T9oytZ3iqWCsx731I_s9FFE9f6GnTZgKjWnOmZQIVWq0oIdxuN2GQnsAYORBG6je4pMv7Ki68eMyX7cKu6aIy70jCBJ93PFXQPn8AgnGZP-0LZHW5UDqUY5WjZs09Wwz6DdIxTpsK2wWnY7KIvSWvRAhamgYIe14CDZZBtPLk66CFXNPQdOyr87UClQHay5hv1MH8V1S-i"/>
+<div class="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/40 to-transparent"></div>
+<div class="absolute inset-0 p-10 flex flex-col justify-end">
+<span class="text-purple text-[10px] font-black uppercase tracking-[0.4em] mb-4 block">SaaS Architecture</span>
+<h4 class="text-3xl font-black mb-4 tracking-tighter">Nexus Hub</h4>
+<div class="h-[1px] w-12 bg-lime group-hover:w-full transition-all duration-700 mb-6"></div>
+<p class="text-slate-400 text-sm opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0 leading-relaxed">Scalable dashboard with live websocket telemetry and Discord integration.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 px-6" id="contact">
+<div class="container mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div>
+<h2 class="text-6xl md:text-7xl font-display font-black mb-10 leading-[0.9] tracking-tighter uppercase">READY TO<br/><span class="text-purple">LAUNCH?</span></h2>
+<p class="text-slate-400 text-lg mb-12 max-w-lg leading-relaxed font-medium">Accepting high-impact projects. Let's engineer something that scales beyond expectations.</p>
+<div class="space-y-8">
+<div class="flex items-center gap-6 group">
+<div class="w-14 h-14 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center group-hover:border-purple/30 transition-all">
+<span class="material-symbols-outlined text-purple text-2xl">mail</span>
+</div>
+<div>
+<div class="text-[9px] uppercase tracking-[0.3em] text-slate-500 font-black mb-1">Direct Protocol</div>
+<div class="text-lg font-bold">contact@lautyy.dev</div>
+</div>
+</div>
+<div class="flex items-center gap-6 group">
+<div class="w-14 h-14 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center group-hover:border-lime/30 transition-all">
+<span class="material-symbols-outlined text-lime text-2xl">terminal</span>
+</div>
+<div>
+<div class="text-[9px] uppercase tracking-[0.3em] text-slate-500 font-black mb-1">Secure Channel</div>
+<div class="text-lg font-bold">@Lautyy_</div>
+</div>
+</div>
+</div>
+<div class="flex gap-4 mt-16">
+<a class="w-12 h-12 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center hover:bg-purple hover:text-obsidian transition-all group" href="#">
+<span class="material-symbols-outlined text-xl group-hover:scale-110 transition-transform">code</span>
+</a>
+<a class="w-12 h-12 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center hover:bg-lime hover:text-obsidian transition-all group" href="#">
+<span class="material-symbols-outlined text-xl group-hover:scale-110 transition-transform">hub</span>
+</a>
+</div>
+</div>
+<div class="noise-bg bg-obsidian p-12 rounded-3xl border border-white/10 relative shadow-2xl">
+<h3 class="text-2xl font-black uppercase tracking-tight mb-10">PROJECT BRIEF</h3>
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-3">
+<label class="text-[9px] font-black uppercase tracking-[0.3em] text-slate-500">CLIENT IDENTITY</label>
+<input class="w-full bg-transparent border-b border-white/10 border-t-0 border-x-0 px-0 py-3 focus:border-purple focus:ring-0 outline-none transition-colors placeholder:text-slate-700" placeholder="NAME / ALIAS" type="text"/>
+</div>
+<div class="space-y-3">
+<label class="text-[9px] font-black uppercase tracking-[0.3em] text-slate-500">COMMUNICATION</label>
+<input class="w-full bg-transparent border-b border-white/10 border-t-0 border-x-0 px-0 py-3 focus:border-purple focus:ring-0 outline-none transition-colors placeholder:text-slate-700" placeholder="EMAIL ADDRESS" type="email"/>
+</div>
+</div>
+<div class="space-y-3">
+<label class="text-[9px] font-black uppercase tracking-[0.3em] text-slate-500">SYSTEM CATEGORY</label>
+<select class="w-full bg-transparent border-b border-white/10 border-t-0 border-x-0 px-0 py-3 focus:border-purple focus:ring-0 outline-none transition-colors appearance-none text-slate-400">
+<option>DISCORD AUTOMATION</option>
+<option>FULL-STACK WEB SYSTEM</option>
+<option>DESKTOP ENGINEERING</option>
+<option>CORPORATE ARCHITECTURE</option>
+</select>
+</div>
+<div class="space-y-3">
+<label class="text-[9px] font-black uppercase tracking-[0.3em] text-slate-500">SPECIFICATIONS</label>
+<textarea class="w-full bg-transparent border-b border-white/10 border-t-0 border-x-0 px-0 py-3 focus:border-purple focus:ring-0 outline-none transition-colors placeholder:text-slate-700" placeholder="PROJECT REQUIREMENTS..." rows="3"></textarea>
+</div>
+<button class="neo-brutal-btn w-full bg-purple hover:bg-purple-light text-obsidian font-black uppercase tracking-widest py-6 transition-all flex items-center justify-center gap-3">
+                        INITIALIZE INQUIRY <span class="material-symbols-outlined font-bold">bolt</span>
+</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<footer class="py-16 px-6 border-t border-white/5 bg-obsidian">
+<div class="container mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-center gap-12">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="text-3xl font-display font-black tracking-tighter">LAUTYY<span class="text-purple">_</span></div>
+<p class="text-slate-600 text-[10px] uppercase font-bold tracking-[0.2em] max-w-xs text-center md:text-left">Architecting the future of community automation systems by <span class="text-lime">SkyNet-Solutions</span>.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-10 text-[10px] uppercase font-black tracking-[0.3em] text-slate-500">
+<a class="hover:text-purple transition-colors" href="#">GITHUB</a>
+<a class="hover:text-purple transition-colors" href="#">DISCORD</a>
+<a class="hover:text-purple transition-colors" href="#">LINKEDIN</a>
+</div>
+<div class="text-slate-600 text-[9px] font-black tracking-widest uppercase bg-white/[0.02] px-6 py-3 rounded-md border border-white/5">
+                © 2024 | LAUTYY_ PROTOCOL @ SKYNET-SOLUTIONS
+            </div>
+</div>
+</div>
+</footer>
+
+</body></html>

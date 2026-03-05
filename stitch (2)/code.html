@@ -1,0 +1,285 @@
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Projects | Lautyy_ - Founder of SkyNet-Solutions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Montserrat:wght@300;400;500;600;700;800&amp;family=Fira+Code:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --obsidian: #0D0D0D;
+            --electric-purple: #A855F7;
+            --cyber-lime: #BEF264;
+            --card-noise: url("https://www.transparenttextures.com/patterns/carbon-fibre.png");
+        }
+        .glow-text-purple {
+            text-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
+        }
+        .glow-text-lime {
+            text-shadow: 0 0 15px rgba(190, 242, 100, 0.4);
+        }
+        .noise-bg {
+            background-image: var(--card-noise);
+            background-repeat: repeat;
+        }
+        .project-card:hover .project-glow {
+            opacity: 1;
+        }
+        .project-glow {
+            transition: opacity 0.5s ease;
+            background: radial-gradient(circle at center, rgba(168, 85, 247, 0.15) 0%, transparent 70%);
+        }
+        .syntax-keyword { color: #C678DD; }
+        .syntax-func { color: #61AFEF; }
+        .syntax-str { color: #98C379; }
+        .syntax-var { color: #E06C75; }
+        .syntax-const { color: #D19A66; }
+        .syntax-comment { color: #5C6370; font-style: italic; }
+    </style>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: "#0D0D0D",
+                        purple: {
+                            DEFAULT: "#A855F7",
+                            light: "#C084FC",
+                        },
+                        lime: {
+                            DEFAULT: "#BEF264",
+                        }
+                    },
+                    fontFamily: {
+                        display: ["Montserrat", "sans-serif"],
+                        sans: ["Inter", "sans-serif"],
+                        mono: ["Fira Code", "monospace"],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+<body class="bg-obsidian text-white font-sans antialiased selection:bg-purple/30 selection:text-lime">
+<header class="fixed top-0 w-full z-50 px-8 py-5 flex justify-between items-center backdrop-blur-xl bg-obsidian/80 border-b border-white/5">
+<div class="flex items-center gap-4">
+<div class="flex flex-col">
+<span class="text-xl font-black font-display tracking-tighter text-white">Lautyy<span class="text-purple">_</span></span>
+<span class="text-[8px] font-bold uppercase tracking-[0.2em] text-lime flex items-center gap-1">
+<span class="material-symbols-outlined text-[10px]">shield</span> SkyNet-Solutions
+            </span>
+</div>
+</div>
+<nav class="hidden md:flex items-center gap-10 text-[10px] font-extrabold uppercase tracking-[0.25em] text-slate-400">
+<a class="hover:text-purple transition-colors" href="index.html">Home</a>
+<a class="text-white border-b border-lime" href="#projects">Work</a>
+<a class="hover:text-purple transition-colors" href="#stack">Stack</a>
+<a class="hover:text-purple transition-colors" href="#contact">Contact</a>
+</nav>
+<div class="hidden md:block">
+<div class="flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-md">
+<span class="w-2 h-2 rounded-full bg-lime animate-pulse"></span>
+<span class="text-[10px] font-black uppercase tracking-widest text-slate-300">Operational</span>
+</div>
+</div>
+</header>
+<main>
+<section class="relative pt-48 pb-20 px-8 md:px-20 border-b border-white/5">
+<div class="max-w-4xl">
+<div class="flex items-center gap-3 mb-8 bg-white/[0.03] w-fit px-4 py-1.5 rounded-full border border-white/10 backdrop-blur-md">
+<span class="material-symbols-outlined text-lime text-base">terminal</span>
+<span class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-300">
+                    Founder @ <span class="text-lime glow-text-lime">SkyNet-Solutions</span>
+</span>
+</div>
+<h1 class="text-6xl md:text-8xl font-display font-black tracking-tighter mb-8 leading-[0.9] uppercase">
+                Technical<br/><span class="text-white glow-text-purple">Showcase<span class="text-lime">.</span></span>
+</h1>
+<p class="text-xl md:text-2xl text-slate-400 font-medium max-w-2xl leading-relaxed">
+                A collection of advanced web systems, Discord automations, and custom engineering. Built for scale, designed for dominance.
+            </p>
+</div>
+</section>
+<section class="py-20 px-8 md:px-20" id="projects">
+<div class="flex flex-wrap items-center gap-4 mb-16 pb-8 border-b border-white/5">
+<span class="text-[10px] font-black uppercase tracking-widest text-slate-500 mr-4">Filter Systems:</span>
+<button class="px-6 py-2 rounded-full bg-lime text-obsidian font-black text-[10px] uppercase tracking-widest transition-all">All Projects</button>
+<button class="px-6 py-2 rounded-full bg-white/5 border border-white/10 hover:border-purple/50 text-slate-300 font-black text-[10px] uppercase tracking-widest transition-all">Discord Bots</button>
+<button class="px-6 py-2 rounded-full bg-white/5 border border-white/10 hover:border-purple/50 text-slate-300 font-black text-[10px] uppercase tracking-widest transition-all">Web Systems</button>
+<button class="px-6 py-2 rounded-full bg-white/5 border border-white/10 hover:border-purple/50 text-slate-300 font-black text-[10px] uppercase tracking-widest transition-all">Custom Launchers</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="project-card group relative bg-obsidian border border-white/10 rounded-3xl overflow-hidden transition-all hover:border-lime/30">
+<div class="project-glow absolute inset-0 opacity-0 pointer-events-none"></div>
+<div class="aspect-video relative overflow-hidden">
+<img alt="GTA Launcher V3" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6JetJb_jX7KP_SOtmfwtqacOKno2Rmuwd347_z5keMUulaWW-r9uIDdSiC_Juh8GKtZk1r_lL7_oAC_-y9lCF_-kQFJX-zHVWXpB_GO8yrpAcynCvs8wtukifEfMiRjT7zWV_872Z3Qp0RbtnWz7mf1GhQxFMJmKZm1yjt1gDygKaw-ka_ade0W-ZCWc9abB_EOE3SByet_XXD1Y8aApx4rtzJee_KogQ4tjtLcKJuJOaDjWrBgaWAxcVgvfI4r7JkYuw76y1YQwS"/>
+<div class="absolute inset-0 bg-gradient-to-t from-obsidian via-transparent to-transparent"></div>
+<div class="absolute top-6 left-6 flex gap-2">
+<span class="px-3 py-1 bg-obsidian/80 backdrop-blur-md border border-white/10 rounded text-[9px] font-bold text-white uppercase tracking-widest">C#</span>
+<span class="px-3 py-1 bg-obsidian/80 backdrop-blur-md border border-white/10 rounded text-[9px] font-bold text-white uppercase tracking-widest">.NET</span>
+<span class="px-3 py-1 bg-obsidian/80 backdrop-blur-md border border-white/10 rounded text-[9px] font-bold text-white uppercase tracking-widest">MySQL</span>
+</div>
+</div>
+<div class="p-10 relative">
+<h3 class="text-3xl font-black tracking-tighter mb-4 uppercase">GTA Launcher <span class="text-lime">V3</span></h3>
+<p class="text-slate-400 mb-8 leading-relaxed font-medium">
+                        Custom C# desktop environment featuring a high-performance dark UI, integrated hardware-id (HWID) licensing, and real-time delta updates for game assets.
+                    </p>
+<div class="flex items-center justify-between">
+<ul class="flex flex-col gap-2">
+<li class="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-slate-500">
+<span class="w-1.5 h-1.5 rounded-full bg-lime"></span> Anti-Cheat System
+                            </li>
+<li class="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-slate-500">
+<span class="w-1.5 h-1.5 rounded-full bg-lime"></span> Discord Rich Presence
+                            </li>
+</ul>
+<button class="bg-white/5 border border-white/10 px-6 py-3 rounded-xl text-[10px] font-black uppercase tracking-[0.2em] group-hover:bg-lime group-hover:text-obsidian transition-all duration-300 flex items-center gap-2">
+                            Case Study <span class="material-symbols-outlined text-sm">visibility</span>
+</button>
+</div>
+</div>
+</div>
+<div class="project-card group relative bg-obsidian border border-white/10 rounded-3xl overflow-hidden transition-all hover:border-purple/30">
+<div class="project-glow absolute inset-0 opacity-0 pointer-events-none" style="background: radial-gradient(circle at center, rgba(168, 85, 247, 0.15) 0%, transparent 70%);"></div>
+<div class="aspect-video relative overflow-hidden">
+<img alt="Sentinel Mod Dashboard" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARoYrOZ1x22H_3T7C4lKT8XudbSdgKLLWcJd45V5tEkRu5ncnjsJY-IfV140N8y5VSQCfQp6MyHSu9dTyqhkO33yNOOgivw82KASeWnsijceSG2RiGJbmNpaT40DFaalHxeAzq6SqtZqFOH9PgJyAfFN9X0mO0Gs-OcCeYaPAnka718aEbeFwRG-34M7hGWlvSPvRLXeXdvreaI72dU1l9UrB0nZuD0aupg0glaTeeXWI4mIE5W-WWUk96agmx3s_dfyLMEImHjebF"/>
+<div class="absolute inset-0 bg-gradient-to-t from-obsidian via-transparent to-transparent"></div>
+<div class="absolute top-6 left-6 flex gap-2">
+<span class="px-3 py-1 bg-obsidian/80 backdrop-blur-md border border-white/10 rounded text-[9px] font-bold text-white uppercase tracking-widest">Node.js</span>
+<span class="px-3 py-1 bg-obsidian/80 backdrop-blur-md border border-white/10 rounded text-[9px] font-bold text-white uppercase tracking-widest">Discord.js</span>
+<span class="px-3 py-1 bg-obsidian/80 backdrop-blur-md border border-white/10 rounded text-[9px] font-bold text-white uppercase tracking-widest">MongoDB</span>
+</div>
+</div>
+<div class="p-10 relative">
+<h3 class="text-3xl font-black tracking-tighter mb-4 uppercase">Sentinel <span class="text-purple">Mod</span></h3>
+<p class="text-slate-400 mb-8 leading-relaxed font-medium">
+                        Comprehensive Discord Bot infrastructure powering communities of 50k+ members. Features enterprise-grade moderation and a custom React-based control panel.
+                    </p>
+<div class="flex items-center justify-between">
+<ul class="flex flex-col gap-2">
+<li class="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-slate-500">
+<span class="w-1.5 h-1.5 rounded-full bg-purple"></span> AI Auto-mod Engine
+                            </li>
+<li class="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-slate-500">
+<span class="w-1.5 h-1.5 rounded-full bg-purple"></span> Multi-Tier Ticket System
+                            </li>
+</ul>
+<button class="bg-white/5 border border-white/10 px-6 py-3 rounded-xl text-[10px] font-black uppercase tracking-[0.2em] group-hover:bg-purple group-hover:text-white transition-all duration-300 flex items-center gap-2">
+                            Case Study <span class="material-symbols-outlined text-sm">visibility</span>
+</button>
+</div>
+</div>
+</div>
+<div class="project-card group relative bg-obsidian border border-white/10 rounded-3xl overflow-hidden transition-all hover:border-lime/30 md:col-span-2">
+<div class="grid md:grid-cols-2">
+<div class="aspect-video md:aspect-auto relative overflow-hidden">
+<img alt="SkyNet-Auth System" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwYlpJaagPSZdmtnD8VmCVxWz1GRCpi0fO4A4d6T37YQS_4h5Re50E0be-7GOBOfhR-1T9oytZ3iqWCsx731I_s9FFE9f6GnTZgKjWnOmZQIVWq0oIdxuN2GQnsAYORBG6je4pMv7Ki68eMyX7cKu6aIy70jCBJ93PFXQPn8AgnGZP-0LZHW5UDqUY5WjZs09Wwz6DdIxTpsK2wWnY7KIvSWvRAhamgYIe14CDZZBtPLk66CFXNPQdOyr87UClQHay5hv1MH8V1S-i"/>
+<div class="absolute inset-0 bg-gradient-to-r from-obsidian via-transparent to-transparent hidden md:block"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-obsidian via-transparent to-transparent md:hidden"></div>
+</div>
+<div class="p-12 relative flex flex-col justify-center">
+<div class="flex gap-2 mb-6">
+<span class="px-3 py-1 bg-white/5 border border-white/10 rounded text-[9px] font-bold text-lime uppercase tracking-widest">TypeScript</span>
+<span class="px-3 py-1 bg-white/5 border border-white/10 rounded text-[9px] font-bold text-lime uppercase tracking-widest">OAuth2</span>
+<span class="px-3 py-1 bg-white/5 border border-white/10 rounded text-[9px] font-bold text-lime uppercase tracking-widest">Redis</span>
+</div>
+<h3 class="text-4xl font-black tracking-tighter mb-4 uppercase">SkyNet<span class="text-lime">-Auth</span></h3>
+<p class="text-slate-400 mb-8 leading-relaxed font-medium text-lg">
+                            Secure authentication gateway integrating Discord OAuth2 with proprietary JWT management. Built to handle 10,000+ concurrent user sessions for SkyNet-Solutions.
+                        </p>
+<div class="flex flex-col sm:flex-row gap-6">
+<button class="bg-lime text-obsidian px-8 py-4 rounded-xl text-[10px] font-black uppercase tracking-[0.2em] hover:scale-105 transition-all flex items-center justify-center gap-2">
+                                VIEW IMPLEMENTATION <span class="material-symbols-outlined text-sm font-bold">arrow_forward</span>
+</button>
+<button class="bg-white/5 border border-white/10 px-8 py-4 rounded-xl text-[10px] font-black uppercase tracking-[0.2em] hover:bg-white/10 transition-all flex items-center justify-center gap-2">
+                                DOCUMENTATION <span class="material-symbols-outlined text-sm">description</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 px-8 md:px-20 bg-[#0A0A0A]">
+<div class="max-w-4xl mx-auto">
+<div class="bg-[#1E1E1E] rounded-lg shadow-2xl border border-white/10 overflow-hidden font-mono text-sm">
+<div class="bg-[#2D2D2D] px-4 py-2 flex justify-between items-center">
+<div class="flex gap-2">
+<div class="w-3 h-3 rounded-full bg-[#FF5F56]"></div>
+<div class="w-3 h-3 rounded-full bg-[#FFBD2E]"></div>
+<div class="w-3 h-3 rounded-full bg-[#27C93F]"></div>
+</div>
+<div class="text-slate-400 text-[10px] uppercase tracking-widest">experience.sh — Visual Studio Code</div>
+</div>
+<div class="p-8">
+<div class="flex gap-4">
+<span class="text-slate-600 select-none">1</span>
+<div><span class="syntax-keyword">class</span> <span class="syntax-func">ProfessionalProfile</span> {</div>
+</div>
+<div class="flex gap-4">
+<span class="text-slate-600 select-none">2</span>
+<div class="pl-4"><span class="syntax-const">constructor</span>() {</div>
+</div>
+<div class="flex gap-4">
+<span class="text-slate-600 select-none">3</span>
+<div class="pl-8"><span class="syntax-var">this</span>.<span class="syntax-const">founder</span> = <span class="syntax-str">'Lautyy_'</span>;</div>
+</div>
+<div class="flex gap-4">
+<span class="text-slate-600 select-none">4</span>
+<div class="pl-8"><span class="syntax-var">this</span>.<span class="syntax-const">company</span> = <span class="text-lime font-bold">'SkyNet-Solutions'</span>;</div>
+</div>
+<div class="flex gap-4">
+<span class="text-slate-600 select-none">5</span>
+<div class="pl-8"><span class="syntax-var">this</span>.<span class="syntax-const">mission</span> = <span class="syntax-str">'Engineered high-performance digital ecosystems.'</span>;</div>
+</div>
+<div class="flex gap-4">
+<span class="text-slate-600 select-none">6</span>
+<div class="pl-4">}</div>
+</div>
+<div class="flex gap-4">
+<span class="text-slate-600 select-none">7</span>
+<div>}</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 px-8 text-center" id="contact">
+<h2 class="text-5xl md:text-7xl font-display font-black mb-8 uppercase">Start a <span class="text-purple">Project.</span></h2>
+<p class="text-slate-500 mb-12 max-w-xl mx-auto font-medium text-lg tracking-tight">Need a professional system built for your brand? Let's connect and architect your vision.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-6">
+<a class="bg-purple text-obsidian px-12 py-5 rounded-xl font-black uppercase text-xs tracking-[0.2em] hover:scale-105 transition-all flex items-center justify-center gap-3" href="mailto:contact@lautyy.dev">
+                Direct Protocol <span class="material-symbols-outlined font-bold">bolt</span>
+</a>
+<a class="bg-white/5 border border-white/10 px-12 py-5 rounded-xl font-black uppercase text-xs tracking-[0.2em] hover:bg-white/10 transition-all flex items-center justify-center gap-3" href="#">
+                Secure Channel <span class="material-symbols-outlined font-bold">terminal</span>
+</a>
+</div>
+</section>
+</main>
+<footer class="py-16 px-8 border-t border-white/5 bg-obsidian">
+<div class="container mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-center gap-12">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="text-3xl font-display font-black tracking-tighter uppercase">LAUTYY<span class="text-purple">_</span></div>
+<p class="text-slate-600 text-[10px] uppercase font-bold tracking-[0.2em] max-w-xs text-center md:text-left">
+                    Architecting the future of community systems. A product of <span class="text-lime">SkyNet-Solutions</span>.
+                </p>
+</div>
+<div class="flex flex-wrap justify-center gap-10 text-[10px] uppercase font-black tracking-[0.3em] text-slate-500">
+<a class="hover:text-purple transition-colors" href="#">GitHub</a>
+<a class="hover:text-purple transition-colors" href="#">Discord</a>
+<a class="hover:text-purple transition-colors" href="#">LinkedIn</a>
+</div>
+<div class="text-slate-600 text-[9px] font-black tracking-widest uppercase bg-white/[0.02] px-6 py-3 rounded-md border border-white/5">
+                © 2024 | LAUTYY_ PROTOCOL @ SKYNET-SOLUTIONS
+            </div>
+</div>
+</div>
+</footer>
+
+</body></html>
