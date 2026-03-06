@@ -526,7 +526,7 @@
                 <div class="noise-bg bg-obsidian p-12 rounded-3xl border border-white/10 relative shadow-2xl"
                     id="project-form" data-aos="fade-left">
                     <h3 class="text-2xl font-black uppercase tracking-tight mb-10">REQUERIMIENTOS</h3>
-                    <form class="space-y-8" action="https://formspree.io/f/mqarpglk" method="POST">
+                    <form class="space-y-8" id="whatsapp-form">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div class="space-y-3">
                                 <label
@@ -619,6 +619,25 @@
 
         if (toggleBtn) toggleBtn.addEventListener('click', toggleMenu);
         if (closeBtn) closeBtn.addEventListener('click', toggleMenu);
+
+        // WhatsApp Form Logic
+        const whatsappForm = document.getElementById('whatsapp-form');
+        if (whatsappForm) {
+            whatsappForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                const name = this.querySelector('input[name="name"]').value;
+                const email = this.querySelector('input[name="email"]').value;
+                const type = this.querySelector('select[name="project_type"]').value;
+                const message = this.querySelector('textarea[name="message"]').value;
+
+                const whatsappNumber = "541159545264";
+                const text = `Hola Lauty! Mi nombre es ${name} (${email}). Estaba viendo tu portfolio y me interesa un: *${type}*.\n\n*Detalles:* ${message}`;
+
+                const encodedText = encodeURIComponent(text);
+                window.open(`https://wa.me/${whatsappNumber}?text=${encodedText}`, '_blank');
+            });
+        }
     </script>
 </body>
 
